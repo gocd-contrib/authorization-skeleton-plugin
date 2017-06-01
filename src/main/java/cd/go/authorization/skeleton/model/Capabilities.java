@@ -14,9 +14,14 @@ public class Capabilities {
     @SerializedName("can_search")
     private final boolean canSearch;
 
-    public Capabilities(SupportedAuthType supportedAuthType, boolean canSearch) {
+    @Expose
+    @SerializedName("can_authorize")
+    private final boolean canAuthorize;
+
+    public Capabilities(SupportedAuthType supportedAuthType, boolean canSearch, boolean canAuthorize) {
         this.supportedAuthType = supportedAuthType;
         this.canSearch = canSearch;
+        this.canAuthorize = canAuthorize;
     }
 
     public static Capabilities fromJSON(String json) {
@@ -28,6 +33,10 @@ public class Capabilities {
     }
 
     public boolean canSearch() {
+        return canSearch;
+    }
+
+    public boolean canAuthorize() {
         return canSearch;
     }
 
