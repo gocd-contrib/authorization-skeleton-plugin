@@ -12,7 +12,7 @@ public class RoleConfiguration {
 
     @Expose
     @SerializedName("ExampleField")
-    @ProfileField(key = "ExampleField", required = false, secure = false)
+    @ProfileField(key = "ExampleField", required = true, secure = false)
     private String exampleField;
 
     public String getExampleField() {

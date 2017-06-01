@@ -14,7 +14,7 @@ import static org.junit.Assert.assertThat;
 public class GetPluginIconExecutorTest {
 
     @Test
-    public void rendersIconInBase64() throws Exception {
+    public void shouldReturnsPluginIcon() throws Exception {
         GoPluginApiResponse response = new GetPluginIconExecutor().execute();
         HashMap<String, String> hashMap = new Gson().fromJson(response.responseBody(), HashMap.class);
         assertThat(hashMap.size(), is(2));
