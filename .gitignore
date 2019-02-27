@@ -1,5 +1,6 @@
 # Intellij files
 .idea/
+authorization-skeleton-plugin.iml
 
 # gradle's output dir
 build/
