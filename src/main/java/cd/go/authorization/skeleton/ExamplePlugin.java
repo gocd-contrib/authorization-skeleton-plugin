@@ -31,6 +31,10 @@ public class ExamplePlugin implements GoPlugin {
                     return new GetPluginIconExecutor().execute();
                 case REQUEST_GET_CAPABILITIES:
                     return new GetCapabilitiesExecutor().execute();
+                case REQUEST_GET_USER_ROLES:
+                    return new GetUseRolesExecutor(request).execute();
+                case IS_VALID_USER:
+                    return new IsValidUserExecutor(request).execute();
                 case REQUEST_GET_AUTH_CONFIG_METADATA:
                     return new GetAuthConfigMetadataExecutor().execute();
                 case REQUEST_AUTH_CONFIG_VIEW:
