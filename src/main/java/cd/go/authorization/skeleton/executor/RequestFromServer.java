@@ -4,6 +4,8 @@ public enum RequestFromServer {
 
     REQUEST_GET_PLUGIN_ICON(Constants.REQUEST_PREFIX + ".get-icon"),
     REQUEST_GET_CAPABILITIES(Constants.REQUEST_PREFIX + ".get-capabilities"),
+    REQUEST_GET_USER_ROLES(Constants.REQUEST_PREFIX + ".get-user-roles"),
+    IS_VALID_USER(Constants.REQUEST_PREFIX + ".is-valid-user"),
 
     REQUEST_GET_AUTH_CONFIG_METADATA(String.join(".", Constants.REQUEST_PREFIX, Constants._AUTH_CONFIG_METADATA, "get-metadata")),
     REQUEST_AUTH_CONFIG_VIEW(String.join(".", Constants.REQUEST_PREFIX, Constants._AUTH_CONFIG_METADATA, "get-view")),
