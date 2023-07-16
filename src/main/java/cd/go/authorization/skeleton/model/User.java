@@ -3,7 +3,6 @@ package cd.go.authorization.skeleton.model;
 import cd.go.authorization.skeleton.exception.InvalidUsernameException;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang3.StringUtils;
 
 public class User {
     @Expose
@@ -23,7 +22,7 @@ public class User {
         this.displayName = displayName;
         this.emailId = emailId == null ? null : emailId.toLowerCase().trim();
 
-        if (StringUtils.isBlank(this.username)) {
+        if (this.username == null || this.username.isBlank()) {
             throw new InvalidUsernameException("Username can not be blank.");
         }
     }

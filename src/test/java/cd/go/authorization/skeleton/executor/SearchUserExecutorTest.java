@@ -1,6 +1,6 @@
 package cd.go.authorization.skeleton.executor;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SearchUserExecutorTest {
 

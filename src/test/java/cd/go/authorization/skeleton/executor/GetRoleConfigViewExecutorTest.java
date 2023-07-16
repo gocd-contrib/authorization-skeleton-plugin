@@ -1,18 +1,18 @@
 package cd.go.authorization.skeleton.executor;
 
-import cd.go.authorization.skeleton.annotation.ProfileMetadata;
 import cd.go.authorization.skeleton.annotation.MetadataHelper;
+import cd.go.authorization.skeleton.annotation.ProfileMetadata;
 import cd.go.authorization.skeleton.model.RoleConfiguration;
 import cd.go.authorization.skeleton.utils.Util;
 import com.google.gson.Gson;
 import com.thoughtworks.go.plugin.api.response.GoPluginApiResponse;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.assertThat;
 
 public class GetRoleConfigViewExecutorTest {
 

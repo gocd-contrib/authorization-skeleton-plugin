@@ -1,6 +1,6 @@
 package cd.go.authorization.skeleton;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AuthorizerTest {
     @Test

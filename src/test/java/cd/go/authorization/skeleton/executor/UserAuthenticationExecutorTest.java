@@ -2,7 +2,7 @@ package cd.go.authorization.skeleton.executor;
 
 import cd.go.authorization.skeleton.Authenticator;
 import cd.go.authorization.skeleton.Authorizer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class UserAuthenticationExecutorTest {
     @Test
