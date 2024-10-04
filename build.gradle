@@ -41,7 +41,7 @@ dependencies {
     testImplementation group: 'org.skyscreamer', name: 'jsonassert', version: '1.5.3'
     testImplementation group: 'org.jsoup', name: 'jsoup', version: '1.18.1'
 
-    testImplementation platform('org.junit:junit-bom:5.11.1')
+    testImplementation platform('org.junit:junit-bom:5.11.2')
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params'
     testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
