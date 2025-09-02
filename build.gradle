@@ -25,7 +25,7 @@ repositories {
 
 ext {
     deps = [
-        gocdPluginApi: 'cd.go.plugin:go-plugin-api:25.2.0',
+        gocdPluginApi: 'cd.go.plugin:go-plugin-api:25.3.0',
     ]
 
     versions = project.ext.deps.collectEntries { lib, libGav -> [lib, libGav.split(':').last()] }
@@ -36,10 +36,10 @@ dependencies {
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.13.1'
 
     testImplementation project.deps.gocdPluginApi
-    testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.18.0'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.19.0'
     testImplementation group: 'org.hamcrest', name: 'hamcrest', version: '3.0'
     testImplementation group: 'org.skyscreamer', name: 'jsonassert', version: '1.5.3'
-    testImplementation group: 'org.jsoup', name: 'jsoup', version: '1.21.1'
+    testImplementation group: 'org.jsoup', name: 'jsoup', version: '1.21.2'
 
     testImplementation platform('org.junit:junit-bom:5.13.4')
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api'
