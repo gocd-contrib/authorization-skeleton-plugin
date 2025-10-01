@@ -13,9 +13,8 @@ project.ext.pluginDesc = [
         vendorUrl  : 'https://github.com/gocd/authorization-sekeleton-plugin'
 ]
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+tasks.withType(JavaCompile).configureEach {
+    options.release = 11
 }
 
 repositories {
